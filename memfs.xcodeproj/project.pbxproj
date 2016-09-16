@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9A82028D1D8BFEA000FEF3BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A82028C1D8BFEA000FEF3BD /* main.m */; };
+		9A8202A21D8C58B600FEF3BD /* OSXFUSE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A8202A11D8C58B600FEF3BD /* OSXFUSE.framework */; };
+		9A8202AB1D8C58E300FEF3BD /* MemDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8202A41D8C58E300FEF3BD /* MemDelegate.m */; };
+		9A8202AC1D8C58E300FEF3BD /* MemDirectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8202A61D8C58E300FEF3BD /* MemDirectory.m */; };
+		9A8202AD1D8C58E300FEF3BD /* MemEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8202A81D8C58E300FEF3BD /* MemEntry.m */; };
+		9A8202AE1D8C58E300FEF3BD /* MemFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8202AA1D8C58E300FEF3BD /* MemFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,15 @@
 /* Begin PBXFileReference section */
 		9A8202891D8BFEA000FEF3BD /* memfs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memfs; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A82028C1D8BFEA000FEF3BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A8202A11D8C58B600FEF3BD /* OSXFUSE.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSXFUSE.framework; path = ../../../../Library/Frameworks/OSXFUSE.framework; sourceTree = "<group>"; };
+		9A8202A31D8C58E300FEF3BD /* MemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemDelegate.h; sourceTree = "<group>"; };
+		9A8202A41D8C58E300FEF3BD /* MemDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemDelegate.m; sourceTree = "<group>"; };
+		9A8202A51D8C58E300FEF3BD /* MemDirectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemDirectory.h; sourceTree = "<group>"; };
+		9A8202A61D8C58E300FEF3BD /* MemDirectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemDirectory.m; sourceTree = "<group>"; };
+		9A8202A71D8C58E300FEF3BD /* MemEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemEntry.h; sourceTree = "<group>"; };
+		9A8202A81D8C58E300FEF3BD /* MemEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemEntry.m; sourceTree = "<group>"; };
+		9A8202A91D8C58E300FEF3BD /* MemFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemFile.h; sourceTree = "<group>"; };
+		9A8202AA1D8C58E300FEF3BD /* MemFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8202A21D8C58B600FEF3BD /* OSXFUSE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,7 @@
 		9A8202801D8BFEA000FEF3BD = {
 			isa = PBXGroup;
 			children = (
+				9A8202A11D8C58B600FEF3BD /* OSXFUSE.framework */,
 				9A82028B1D8BFEA000FEF3BD /* memfs */,
 				9A82028A1D8BFEA000FEF3BD /* Products */,
 			);
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				9A82028C1D8BFEA000FEF3BD /* main.m */,
+				9A8202A31D8C58E300FEF3BD /* MemDelegate.h */,
+				9A8202A41D8C58E300FEF3BD /* MemDelegate.m */,
+				9A8202A51D8C58E300FEF3BD /* MemDirectory.h */,
+				9A8202A61D8C58E300FEF3BD /* MemDirectory.m */,
+				9A8202A71D8C58E300FEF3BD /* MemEntry.h */,
+				9A8202A81D8C58E300FEF3BD /* MemEntry.m */,
+				9A8202A91D8C58E300FEF3BD /* MemFile.h */,
+				9A8202AA1D8C58E300FEF3BD /* MemFile.m */,
 			);
 			path = memfs;
 			sourceTree = "<group>";
@@ -118,6 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A8202AB1D8C58E300FEF3BD /* MemDelegate.m in Sources */,
+				9A8202AE1D8C58E300FEF3BD /* MemFile.m in Sources */,
+				9A8202AC1D8C58E300FEF3BD /* MemDirectory.m in Sources */,
+				9A8202AD1D8C58E300FEF3BD /* MemEntry.m in Sources */,
 				9A82028D1D8BFEA000FEF3BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +237,10 @@
 		9A8202911D8BFEA000FEF3BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +248,10 @@
 		9A8202921D8BFEA000FEF3BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +275,7 @@
 				9A8202921D8BFEA000FEF3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
