@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <OSXFUSE/OSXFUSE.h>
+
+#import "MemDelegate.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        MemDelegate* delegate = [[MemDelegate alloc] init];
+        GMUserFileSystem* fs = [[GMUserFileSystem alloc] initWithDelegate:delegate isThreadSafe:NO];
+        [fs mountAtPath:@(argv[1])
+            withOptions:@[@"debug", @"local", @"volname=Memory File System"]
+       shouldForeground:YES
+        detachNewThread:NO];
     }
     return 0;
 }
